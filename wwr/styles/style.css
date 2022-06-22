@@ -263,7 +263,7 @@ footer .social img {
 
 .questions-grid {
   display: grid;
-  grid-template-columns: 1fr, 2fr, 1fr, 2fr, 1fr;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
   gap: 25px;
   text-align: center;
   margin-inline: 60px;
