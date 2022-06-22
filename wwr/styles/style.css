@@ -232,7 +232,7 @@ footer .social img {
 /* FAQ Page  */
 
 .faq-hero {
-  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url('/wwr/images/faq.svg');
+  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("/wwr/images/faq.svg");
   background-size: cover;
   background-position: bottom;
   height: 70vh;
@@ -267,7 +267,7 @@ footer .social img {
   gap: 25px;
   text-align: center;
   margin-inline: 60px;
-  list-style: url('/wwr/images/target.png');
+  list-style-image: url('/wwr/images/target.png');
 }
 
 .questions-grid .q1 {
