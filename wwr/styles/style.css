@@ -232,7 +232,7 @@ footer .social img {
 /* FAQ Page  */
 
 .faq-hero {
-  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("/wwr/images/faq.svg");
+  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("/wwr/images/camping.jpg");
   background-size: cover;
   background-position: bottom;
   height: 70vh;
