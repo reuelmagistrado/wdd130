@@ -229,8 +229,88 @@ footer .social img {
 }
 
 
+/* FAQ Page  */
 
+.faq-hero {
+  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)),url(/wwr/images/faq.svg);
+  background-size: cover;
+  background-position: bottom;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.faq-msg {
+  color: #272343;
+}
+
+.faq-msg h2 {
+  font-size: 5rem;
+}
+
+.faq-msg p {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #e3f6f5;
+}
+
+.faq-title {
+  text-align: center;
+  margin: 0;
+  padding-block: 30px;
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr, 2fr, 1fr;
+  gap: 25px;
+  text-align: center;
+  margin-inline: 60px;
+  list-style: url('/wwr/images/target.png');
+}
+
+.questions-grid .q1 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.questions-grid .q2 {
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.questions-grid .q3 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.questions-grid .q4 {
+  grid-row: 3/5;
+  grid-column: 4/5;
+}
+
+.questions-grid .q5 {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+.questions-grid .q6 {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+
+.questions-grid h2 {
+  font-size: 1.5rem;
+}
+
+.questions-grid p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.questions-grid section {
+  text-align: left;
+}
 
 /* screen < 900px */
 
@@ -274,4 +354,13 @@ footer .social img {
   footer {
       margin-top: 25px;
   }
+
+
+  /* FAQ screen < 900px*/
+  
+  .questions-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
