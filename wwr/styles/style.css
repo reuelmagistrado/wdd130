@@ -64,7 +64,8 @@ nav a:hover {
   margin-top: 100px;
 }
 
-#hero-msg h1, #hero-msg h4 {
+#hero-msg h1,
+#hero-msg h4 {
   text-align: center;
   color: white;
 }
@@ -107,11 +108,14 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-.card-img, .mountains {
+.card-img,
+.mountains {
   width: 100%;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card,
+.camping-card,
+.rapids-card {
   margin: 200px 0;
 }
 
@@ -232,7 +236,7 @@ footer .social img {
 /* FAQ Page  */
 
 .faq-hero {
-  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("/wwr/images/camping.jpg");
+  background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("../images/faq.svg");
   background-size: cover;
   background-position: bottom;
   height: 70vh;
@@ -263,11 +267,10 @@ footer .social img {
 
 .questions-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-  gap: 25px;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  gap: 5px;
   text-align: center;
-  margin-inline: 60px;
-  list-style-image: url('/wwr/images/target.png');
+  list-style-image: url("../images/target.png");
 }
 
 .questions-grid .q1 {
@@ -308,6 +311,7 @@ footer .social img {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 .questions-grid section {
   text-align: left;
 }
@@ -315,52 +319,69 @@ footer .social img {
 /* screen < 900px */
 
 @media screen and (max-width: 900px) {
-  #hero, .home-grid {
-      display: block;
-      height: auto;
+
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
   }
-  nav, footer {
-      flex-direction: column;
-  }
-  nav a {
-      display: block;
-      padding: 15px;
-  }
-  #hero {
-      margin-top: 0;
-  }
-  #hero-msg {
-      margin-top: 0;
-  }
-  #hero-msg h4 {
-      display: none;
-  }
-  .home-title {
-      font-size: 25px;
-      color: #6f7364;
-  }
-  .rivers-card, .camping-card, .rapids-card { 
-      margin: 50px auto;
-      width: 60%;
-  }
-  #background {
-      display: none;
-  }
-  .mountains, .msg {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-  }
+
+  nav,
   footer {
-      margin-top: 25px;
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  #hero {
+    margin-top: 0;
+  }
+
+  #hero-msg {
+    margin-top: 0;
+  }
+
+  #hero-msg h4 {
+    display: none;
+  }
+
+  .home-title {
+    font-size: 25px;
+    color: #6f7364;
+  }
+
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+
+  #background {
+    display: none;
+  }
+
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 25px;
   }
 
 
   /* FAQ screen < 900px*/
-  
+
   .questions-grid {
     display: flex;
     flex-direction: column;
+    margin-inline: 50px;
   }
 
 }
