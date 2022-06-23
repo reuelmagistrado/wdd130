@@ -246,17 +246,18 @@ footer .social img {
   text-align: center;
 }
 
-.faq-msg {
+.faq-msg h2 {
+  font-size: 5rem;
   color: #272343;
 }
 
-.faq-msg h2 {
-  font-size: 5rem;
+.faq-msg p {
+  color: white
 }
 
 .faq-msg p {
   font-size: 2rem;
-  text-shadow: 1px 1px 1px #e3f6f5;
+  text-shadow: 1px 1px 1px #272343;
 }
 
 .faq-title {
