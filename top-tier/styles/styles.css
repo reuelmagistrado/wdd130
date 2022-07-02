@@ -8,7 +8,7 @@
 
 body {
     background-color: #FFF;
-    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
   }
 
@@ -30,7 +30,7 @@ nav {
 
 nav a {
     text-align: center;
-    color: #623958;
+    color: #044689;
     text-decoration: none;
     padding: 35px;
 }
@@ -48,7 +48,7 @@ nav a:hover {
 }
 
 .hero-box {
-    height: 50vh;
+    height: 70vh;
     background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("../images/home-heroimg.jpg");
     background-size: cover;
     background-position: center;
@@ -57,25 +57,27 @@ nav a:hover {
 .headline {
     color: #FFF;
     text-shadow: 1px 1px 1px black;
-    padding: 50px;
-    font-family: 'Montserrat', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-family: 'Lora', serif;
     font-size: 2.5rem;
 }
 
 .cta {
     margin-left: 50px;
     padding: 15px 30px;
-    border-radius: 10px;
-    color: #eff6ff;
-    background-color: #724367;
+    border-radius: 25px;
+    color: #FFF;
+    background-color: #EA3E3E;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.25ch;
+    letter-spacing: 0.15ch;
 }
 
 .cta:hover {
-    background-color: #164886;
+    background-color: #724367;
 }
 
 .about-us {
@@ -84,14 +86,15 @@ nav a:hover {
 }
 
 .title {
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 50px;
     font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.1ch;
 }
 
 .about-us .title {
-    color: #FFF;
+    color: #e1e1e1;
 }
 
 .about-us p {
@@ -116,6 +119,7 @@ nav a:hover {
 
 .purpose-list .title {
     grid-column: 1/5;
+    color: #353839;
 }
 
 .purpose-list p {
@@ -165,7 +169,7 @@ nav a:hover {
 
 .hire-us {
     color: #FFF;
-    background-color: #724367;
+    background-color: #164886;
     padding: 50px;
 }
 
@@ -173,11 +177,46 @@ nav a:hover {
     color: #edf6ff;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
 
+input,
+select,
+textarea {
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border-style: none;
+}
 
+textarea {
+    resize: none;
+}
 
+button {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin-inline: auto;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: #EA3E3E;
+    color:#e1e1e1;
+}
 
-
+button:hover {
+    background-color: #e1e1e1;
+    color: #EA3E3E;
+}
 
 footer {
     background-color: #D6E2ED;
@@ -204,7 +243,7 @@ footer > a {
 }
 
 footer > a:hover {
-    color: #724367;
+    color: #EA3E3E;
 }
 
 .social-media {
@@ -214,4 +253,97 @@ footer > a:hover {
 
 .social-media a {
     text-decoration: none;
+}
+
+
+/* Services Page */
+
+.hero-box.services {
+    background-image: linear-gradient(rgba(0 0 0 / 20%), rgba(0 0 0 / 20%)), url("../images/services-heroimg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-list img {
+    width: 50%;
+}
+
+
+/* screen < 900px */
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .purpose-list .p1 {
+        grid-column: 1/5;
+    }
+
+    .purpose-list .img1 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+    .purpose-list .p2 {
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+
+    .purpose-list .img2{
+        grid-column: 1/5;
+        grid-row: 7/8;
+    }
+
+    .purpose-list .p3 {
+        grid-column: 1/5;
+        grid-row: 9/10;
+    }
+
+    .purpose-list .img3{
+        grid-column: 1/5;
+        grid-row: 11/12;
+    }
+
+    .purpose-list .p4 {
+        grid-column: 1/5;
+        grid-row: 12/13;
+    }
+
+    .purpose-list .img4{
+        grid-column: 1/5;
+        grid-row: 13/14;
+    }
+
+    .hire-us {
+        padding: 50px 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .company-details {
+        grid-column: 1/4;
+    }
+
+    footer {
+        gap: 20px;
+    }
+    footer p {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        text-align: center;
+    }
+
+    footer a {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .social-media {
+        grid-column: 1/4;
+        grid-row: 7/8;
+    }
+    
 }
