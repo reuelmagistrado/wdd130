@@ -10,85 +10,105 @@
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="./index.html">
-        <img src="./images/logo.png" alt="Company Logo" width="98" height="98">
-    </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-    </header>
-    <div class="hero-box contactus">
-        <section class="hero-msg">
-            <h1 class="headline">A Time to <strong>Say Hello!</strong></h1>
-        </section>
+    <div id="content">
+        <header>
+            <a class="logo" href="index.html">
+                <img src="./images/logo.png" alt="Company Logo" width="98" height="98">
+            </a>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="javascript:void(0);" class="container icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </nav>
+        </header>
+        <div class="hero-box contactus">
+            <section class="hero-msg">
+                <h1 class="headline">A Time to <strong>Say Hello!</strong></h1>
+            </section>
+        </div>
+
+        <main>
+
+            <section class="hire-us">
+                <h2 class="title">Contact Us</h2>
+                <form action="mailto:mag21010@byui.edu" method="get" enctype="text/plain">
+                    <label for="name">Name: </label>
+                    <input type="text" name="fullname" id="name">
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="budget">Budget: </label>
+                    <input type="number" name="budget" id="budget">
+
+                    <label for="service">Service: </label>
+                    <select name="service" id="service">
+                        <option value=""></option>
+                        <option value="Landing Page Development">Landing Page Development</option>
+                        <option value="Design">Design</option>
+                        <option value="SEO Services">SEO Services</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Outsource">Outsource</option>
+                    </select>
+
+                    <label for="contact">Contact: </label>
+                    <input type="tel" name="contact" id="contact">
+
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="company-details">
+                <address class="location">
+                    ARANAI Village, Brgy. Ususan <br>
+                    Taguig City, Metro Manila <br>
+                    1632 Philippines
+                </address>
+                <address class="phone">
+                    (+63) 919 219 2754
+                </address>
+                <address class="email">
+                    reuelmagistrado17@gmail.com
+                </address>
+            </div>
+            <p>Created wih grit by Reuel Magistrado &copy; 2022</p>
+            <a href="site-plan.html">Site Plan</a>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./images/fb.png" alt="fb logo">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./images/insta.png" alt="insta logo">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="./images/twitter.png" alt="twitter logo">
+                </a>
+            </div>
+
+        </footer>
     </div>
 
-    <main>
-        
-        <section class="hire-us">
-            <h2 class="title">Contact Us</h2>
-            <form action="mailto:mag21010@byui.edu" method="get" enctype="text/plain">
-                <label for="name">Name: </label>
-                <input type="text" name="fullname" id="name">
-
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-
-                <label for="budget">Budget: </label>
-                <input type="number" name="budget" id="budget">
-
-                <label for="service">Service: </label>
-                <select name="service" id="service">
-                    <option value=""></option>
-                    <option value="Landing Page Development">Landing Page Development</option>
-                    <option value="Design">Design</option>
-                    <option value="SEO Services">SEO Services</option>
-                    <option value="Digital Marketing">Digital Marketing</option>
-                    <option value="Outsource">Outsource</option>
-                </select>
-
-                <label for="contact">Contact: </label>
-                <input type="tel" name="contact" id="contact">
-
-                <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button>Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="company-details">
-            <address class="location">
-                ARANAI Village, Brgy. Ususan <br>
-                Taguig City, Metro Manila <br>
-                1632 Philippines
-            </address>
-            <address class="phone">
-                (+63) 919 219 2754
-            </address>
-            <address class="email">
-                reuelmagistrado17@gmail.com
-            </address>
-        </div>
-        <p>Created wih grit by Reuel Magistrado &copy; 2022</p>
-        <a href="site-plan.html">Site Plan</a>
-        <div class="social-media">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="./images/fb.png" alt="fb logo">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="./images/insta.png" alt="insta logo">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img src="./images/twitter.png" alt="twitter logo">
-            </a>
-        </div>
-
-    </footer>
+    <script>
+        // Animated Menu Bar
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
