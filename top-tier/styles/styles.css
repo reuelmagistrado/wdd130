@@ -77,6 +77,11 @@ nav a:hover {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15ch;
+    /* applied user-agent stylesheet of submit button to make it look similar */
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
 }
 
 .cta:hover {
