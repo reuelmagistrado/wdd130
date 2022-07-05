@@ -38,16 +38,16 @@
                 <h2 class="title">Contact Us</h2>
                 <form action="mailto:mag21010@byui.edu" method="get" enctype="text/plain">
                     <label for="name">Name: </label>
-                    <input type="text" name="fullname" id="name">
+                    <input type="text" name="fullname" id="name" required>
 
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
 
                     <label for="budget">Budget: </label>
                     <input type="number" name="budget" id="budget">
 
                     <label for="service">Service: </label>
-                    <select name="service" id="service">
+                    <select name="service" id="service" required>
                         <option value=""></option>
                         <option value="Landing Page Development">Landing Page Development</option>
                         <option value="Design">Design</option>
@@ -60,7 +60,7 @@
                     <input type="tel" name="contact" id="contact">
 
                     <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                     <button>Submit</button>
                 </form>
             </section>
