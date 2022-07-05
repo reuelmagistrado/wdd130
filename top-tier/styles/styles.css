@@ -500,6 +500,62 @@ footer>a:hover {
     }
 
 
+    /* Services Page */
+    .services-list {
+        text-align: center;
+    }
+    
+    .services-list .headline1 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .services-list .services1 {
+        grid-column: 1/5;
+        grid-row: 3/5;
+    }
+
+    .services-list .headline2 {
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+
+    .services-list .services2 {
+        grid-column: 1/5;
+        grid-row: 6/8;
+    }
+
+    .services-list .headline3 {
+        grid-column: 1/5;
+        grid-row: 8/9;
+    }
+
+    .services-list .services3 {
+        grid-column: 1/5;
+        grid-row: 9/11;
+    }
+
+    .services-list .headline4 {
+        grid-column: 1/5;
+        grid-row: 11/12;
+    }
+
+    .services-list .services4 {
+        grid-column: 1/5;
+        grid-row: 12/14;
+    }
+
+    .services-list .headline5 {
+        grid-column: 1/5;
+        grid-row: 14/15;
+    }
+
+    .services-list .services5 {
+        grid-column: 1/5;
+        grid-row: 15/17;
+    }
+
+
     /* Responsive TopNav */
     .topnav a:not(:last-child) {
         display: none;
